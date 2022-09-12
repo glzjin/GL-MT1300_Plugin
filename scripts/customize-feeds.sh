@@ -52,18 +52,18 @@ find ./luci-app-autotimeset -type f | xargs chmod 755
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
-# Add gotop
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
+# # Add gotop
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
 
-# Add NeteaseMusic plugin
-cp -r /workdir/lede/package/lean/UnblockNeteaseMusic /workdir/openwrt/package/lean/
-cp -r /workdir/lede/package/lean/UnblockNeteaseMusic-Go /workdir/openwrt/package/lean/
-cp -r /workdir/lede/package/lean/luci-app-unblockmusic /workdir/openwrt/package/lean/
-ln -s /workdir/openwrt/package/lean/luci-app-unblockmusic/po/zh-cn /workdir/openwrt/package/lean/luci-app-unblockmusic/po/zh_Hans
+# # Add NeteaseMusic plugin
+# cp -r /workdir/lede/package/lean/UnblockNeteaseMusic /workdir/openwrt/package/lean/
+# cp -r /workdir/lede/package/lean/UnblockNeteaseMusic-Go /workdir/openwrt/package/lean/
+# cp -r /workdir/lede/package/lean/luci-app-unblockmusic /workdir/openwrt/package/lean/
+# ln -s /workdir/openwrt/package/lean/luci-app-unblockmusic/po/zh-cn /workdir/openwrt/package/lean/luci-app-unblockmusic/po/zh_Hans
 
-# Add adbyby
-cp -r /workdir/lede/package/lean/adbyby ./
-cp -r /workdir/lede/package/lean/luci-app-adbyby-plus ./
+# # Add adbyby
+# cp -r /workdir/lede/package/lean/adbyby ./
+# cp -r /workdir/lede/package/lean/luci-app-adbyby-plus ./
 
 
 # Add openclash
