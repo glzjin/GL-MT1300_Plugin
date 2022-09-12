@@ -61,10 +61,6 @@ cp -r /workdir/lede/package/lean/UnblockNeteaseMusic-Go /workdir/openwrt/package
 cp -r /workdir/lede/package/lean/luci-app-unblockmusic /workdir/openwrt/package/lean/
 ln -s /workdir/openwrt/package/lean/luci-app-unblockmusic/po/zh-cn /workdir/openwrt/package/lean/luci-app-unblockmusic/po/zh_Hans
 
-# Add smartdns
-svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
-
 # Add adbyby
 cp -r /workdir/lede/package/lean/adbyby ./
 cp -r /workdir/lede/package/lean/luci-app-adbyby-plus ./
