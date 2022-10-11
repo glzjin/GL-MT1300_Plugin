@@ -2,12 +2,12 @@ cd openwrt/bin/targets/*/*
 rm -fr *
 mkdir plugin
 
-# plugin list in ../../../packages/mipsel_24kc
+# plugin list in ../../../packages/x86_64
 pkglist="base/frpc_*.ipk base/luci-app-frpc_*.ipk base/npc_*.ipk base/luci-app-nps_*.ipk base/shadowsocksr-libev-*.ipk base/pdnsd-alt_*.ipk base/chinadns-ng_*.ipk base/microsocks_*.ipk base/dns2socks_*.ipk base/simple-obfs*.ipk base/tcping_*.ipk base/v2ray*.ipk base/xray*.ipk base/trojan*.ipk base/ipt2socks_*.ipk base/redsocks2_*.ipk base/luci-app-passwall*.ipk base/luci-app-ssr-plus*.ipk luci/luci-compat_*.ipk base/xray-core_*.ipk gli_pub/shadowsocks-libev-ss-*.ipk base/shadowsocksr-libev-ssr-*.ipk base/UnblockNeteaseMusic-Go_*.ipk base/luci-app-unblockmusic*.ipk"
 
 for pkg in $pkglist
 do
-    file=../../../packages/mipsel_24kc/$pkg
+    file=../../../packages/x86_64/$pkg
     ls=`ls $file 2>/dev/null`
     if [ -z $ls ]
     then
